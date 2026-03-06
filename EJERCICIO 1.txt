@@ -1,0 +1,21 @@
+# pedir número
+numero = input("Ingrese un número de 4 dígitos: ")
+
+# comprobar que tenga 4 dígitos y que sea número
+if numero.isdigit() and len(numero) == 4:
+
+    # convertir el número en lista de dígitos
+    digitos = []
+    for i in numero:
+        digitos.append(int(i))
+
+    # ordenar ascendente
+    digitos.sort()
+    print("Ascendente:", digitos)
+
+    # invertir el orden para descendente
+    digitos.reverse()
+    print("Descendente:", digitos)
+
+else:
+    print("Número no válido, debe tener 4 dígitos")
